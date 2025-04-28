@@ -1,6 +1,6 @@
 "use server";
 
-import { signOut } from "next-auth/react";
+import { signOut } from "@/auth";
 import { getUserByEmail } from "../db/user";
 
 export async function getMe(email: string) {
